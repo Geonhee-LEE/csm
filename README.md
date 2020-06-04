@@ -12,14 +12,13 @@ Binary install (via ROS melodic)
 ------------------------------
 
 ```
+cd ~/catkin_ws/src
 git clone https://github.com/AndreaCensi/csm
-cd csm
-move back cd ..
-rosdep install --from-paths src --ignore-src -r -y
-cd csm
-cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr/local .
-make
-sudo make install
 cd ..
-catkin_make
+catkin_make_isolated
+cd ~/catkin_ws/src
+git clone https://github.com/ccny-ros-pkg/scan_tools.git
+cd ..
+catkin_make_isolated
+source devel/setup.bash
 ```
