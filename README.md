@@ -20,5 +20,5 @@ cd ~/catkin_ws/src
 git clone https://github.com/ccny-ros-pkg/scan_tools.git
 cd ..
 catkin_make_isolated
-source devel/setup.bash
+source devel_isolated/setup.bash 
 ```
