@@ -8,7 +8,7 @@ Christoph Sprunk and Rainer Kuemmerle.
 
 [branch]: https://github.com/AndreaCensi/csm/tree/csm_eigen
 
-Binary install (via ROS melodic)
+Install (via ROS melodic)
 ------------------------------
 
 ```
@@ -21,4 +21,10 @@ git clone https://github.com/ccny-ros-pkg/scan_tools.git
 cd ..
 catkin_make_isolated
 source devel_isolated/setup.bash 
+```
+
+## Examples
+```
+roslaunch laser_scan_matcher demo.launch
+
 ```
